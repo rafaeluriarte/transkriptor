@@ -8,7 +8,7 @@ load_dotenv()
 
 # Base paths
 BASE_DIR = Path(__file__).resolve().parent
-INPUT_DIR = BASE_DIR / "input"
+INPUT_DIR = BASE_DIR / "data"
 OUTPUT_DIR = BASE_DIR / "output"
 
 # Create directories if they don't exist

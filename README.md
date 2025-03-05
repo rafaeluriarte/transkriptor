@@ -1,8 +1,8 @@
-# Transcriptor
+# Transkriptor
 
 ## Overview
 
-Transcriptor is an AI-supported document transcription software designed for historical documents. It processes a collection of documents by generating structured descriptions, analyzing their content, and refining prompts for improved transcription accuracy. The system consists of a series of intelligent agents that assist in the document transcription workflow.
+Transkriptor is an AI-supported document transcription software designed for historical documents. It processes a collection of documents by generating structured descriptions, analyzing their content, and refining prompts for improved transcription accuracy. The system consists of a series of intelligent agents that assist in the document transcription workflow.
 
 This is the first implemented agent, designed to test the feasibility of a fully automated transcription process. Additional agents will be implemented in the future to complete the workflow.
 
