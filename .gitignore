@@ -67,6 +67,7 @@ output/
 logs/
 *.log
 transcription_agent.log
+data/
 
 # OS specific
 .DS_Store
