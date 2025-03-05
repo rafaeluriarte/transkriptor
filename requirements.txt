@@ -1,0 +1,7 @@
+pdf2image
+Pillow
+python-dotenv
+requests
+argparse
+pytest
+setuptools
