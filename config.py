@@ -22,7 +22,7 @@ OUTPUT_DIR.mkdir(exist_ok=True)
 
 # Logging configuration
 LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
-LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+LOG_FORMAT = os.getenv("LOG_FORMAT", "%(asctime)s - %(name)s - %(levelname)s - %(message)s")
 LOG_FILE = BASE_DIR / "transcription_agent.log"
 
 # Configure logging
@@ -36,7 +36,7 @@ logging.basicConfig(
 )
 
 # Sample size for image analysis
-SAMPLE_SIZE = 5
+SAMPLE_SIZE = int(os.getenv("SAMPLE_SIZE", "5"))
 
 # Material types for prompting
 MATERIAL_TYPES = [
@@ -55,7 +55,7 @@ if not OPENAI_API_KEY:
     raise ValueError("OPENAI_API_KEY environment variable is not set")
 
 OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4-vision-preview")
-MAX_TOKENS = 1000
+MAX_TOKENS = int(os.getenv("MAX_TOKENS", "1000"))
 
 # Supported Image Formats
-SUPPORTED_IMAGE_FORMATS = ['.jpg', '.jpeg', '.png']  # Add more if needed 
+SUPPORTED_IMAGE_FORMATS = os.getenv("SUPPORTED_IMAGE_FORMATS", ".jpg,.jpeg,.png").split(",") 
